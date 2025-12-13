@@ -1,93 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Curriculum Vitae</title>
-    <style>
-      /* Basic styling */
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 20px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SABITU OLAWALE | CV</title>
 
-      img {
-        border-radius: 40%;
-        display: block;
-        margin-bottom: 20px;
-      }
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-      h1, h2 {
-        color: #333;
-      }
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #222;
+      --card: #f4f4f4;
+      --accent: #4CAF50;
+      --border: #ddd;
+    }
 
-      /* Email button styling */
-      .email-button {
-        display: inline-block;
-        background: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        margin: 5px 0;
-        transition: background 0.3s;
-      }
-      .email-button:hover {
-        background: #45a049;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>SABITU OLAWALE</h1>
-    <img src="profile.jpeg" alt="A very fine boy" width="200" />
+    body.dark {
+      --bg: #121212;
+      --text: #f1f1f1;
+      --card: #1e1e1e;
+      --border: #333;
+    }
 
-    <h2>Contact Information</h2>
-    <!-- Styled email button -->
-    <a class="email-button" href="mailto:olawalesabitu87@gmail.com?subject=Hello&body=I%20want%20to%20contact%20you">Email Me</a>
-    <p>Phone: +2347019933510</p>
-    <p>Address: 4, Odebiyi Oroja Street, Meiran, Lagos, Nigeria</p>
-<ul>
-  <li>X: <a href="https://www.twitter.com/olawale_sabitu" target="_blank">@olawale_sabitu</a>
-    </li>
-<li>LinkedIn  <a href="https://www.linkedin.com/in/olawale-oluwapelumi-303a34244" target="_blank">@Olawale Oluwapelumi</a>
-</li>
-<li>instagram <a href="https://www.instagram.com/bolaj_vibez" target="_blank">@bolaj_vibez</a> </li>
-    <h2>Professional Summary</h2>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+    }
+
+    img.profile {
+      width: 180px;
+      border-radius: 50%;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .toggle {
+      margin-left: auto;
+      cursor: pointer;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(0,0,0,0.05);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social a {
+      margin-right: 15px;
+    }
+
+    .email-button {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 600px) {
+      .top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="top">
+      <img src="profile.jpeg" alt="Profile Photo" class="profile">
+      <div>
+        <h1>SABITU OLAWALE</h1>
+        <p>Junior Software Developer (Trainee)</p>
+        <button class="toggle" onclick="toggleDark()">🌙 Dark Mode</button>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <h2><i class="fa-solid fa-address-card"></i> Contact Information</h2>
+
+    <a class="email-button" href="mailto:olawalesabitu87@gmail.com">Email Me</a>
+
+    <table>
+      <tr><th>Type</th><th>Details</th></tr>
+      <tr><td>Email</td><td>olawalesabitu87@gmail.com</td></tr>
+      <tr><td>Phone</td><td>+2347019933510</td></tr>
+      <tr><td>Address</td><td>Meiran, Lagos, Nigeria</td></tr>
+    </table>
+
+    <div class="social">
+      <a href="https://twitter.com/olawale_sabitu" target="_blank"><i class="fa-brands fa-x-twitter"></i> X</a>
+      <a href="https://linkedin.com/in/olawale-oluwapelumi-303a34244" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="https://instagram.com/bolaj_vibez" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    </div>
+
+    <!-- SUMMARY -->
+    <h2><i class="fa-solid fa-user"></i> Professional Summary</h2>
     <p>
-      Motivated and dedicated student at TS Academy with growing skills in software development and a strong passion for building real-world solutions. I am committed to continuous learning, hands-on practice, and developing a strong foundation in coding, problem-solving, and modern technologies. Known for being focused, hardworking, and willing to take initiative, I aim to apply my knowledge to challenging projects while growing into a skilled and dependable tech professional.
+      Motivated TS Academy student with growing skills in software development.
+      Passionate about building real-world solutions, continuous learning,
+      teamwork, and becoming a dependable tech professional.
     </p>
 
-    <h2>Work Experience</h2>
-    <p>Student at TS Academy</p>
-    <ul>
-      <li>Junior developer (trainee) November 28 till present</li>
-      <li>Participated in code reviews and contributed to team knowledge sharing.</li>
-    </ul>
-    <img src="data:image/jpeg;base64,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" alt="TS Academy Logo" width="200" />
-   
-    <h2>Education</h2>
-    <p>SSCE Holder</p>
-  
-    <h2>Skills</h2>
-    <ul>
-      <li>Software development (trainee)</li>
-      <li>Web Technologies: HTML, CSS, React, Node.js</li>
-      <li>Database Management: MySQL</li>
-      <li>Version Control: Git</li>
-      <li>Problem-Solving and Analytical Thinking</li>
-      </ul>
+    <!-- EXPERIENCE -->
+    <h2><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
 
-      <img src="https://bernardmarr.com/wp-content/uploads/2022/04/The-10-Biggest-Technology-Trends-That-Will-Transform-The-Next-Decade.jpg" alt="A beautiful web picture" width="200"
-  />
-    <h2>Projects</h2>
-<div>
-  <h8>Wealthboj Portfolio</h8>
-  <p>A personal portfolio project showcasing my skills and work at Wealthboj.</p>
-  <a href="https://wealthboj.github.io/olawale/" target="_blank">View Project</a>
-</div>
-    </body>
+    <table>
+      <tr>
+        <th>Role</th>
+        <th>Organization</th>
+        <th>Duration</th>
+        <th>Responsibilities</th>
+      </tr>
+      <tr>
+        <td>Junior Developer (Trainee)</td>
+        <td>TS Academy</td>
+        <td>Nov 28 – Present</td>
+        <td>Code reviews, teamwork, hands-on development</td>
+      </tr>
+    </table>
+
+    <!-- EDUCATION -->
+    <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+
+    <table>
+      <tr><th>Qualification</th><th>Status</th></tr>
+      <tr><td>SSCE</td><td>Completed</td></tr>
+    </table>
+
+    <!-- SKILLS -->
+    <h2><i class="fa-solid fa-code"></i> Skills</h2>
+
+    <table>
+      <tr><th>Category</th><th>Skills</th></tr>
+      <tr><td>Web</td><td>HTML, CSS, React, Node.js</td></tr>
+      <tr><td>Database</td><td>MySQL</td></tr>
+      <tr><td>Tools</td><td>Git, GitHub</td></tr>
+      <tr><td>Soft Skills</td><td>Problem-solving, analytical thinking</td></tr>
+    </table>
+
+    <!-- PROJECTS -->
+    <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+
+    <table>
+      <tr><th>Name</th><th>Description</th><th>Link</th></tr>
+      <tr>
+        <td>Wealthboj Portfolio</td>
+        <td>Personal portfolio showcasing my skills and work</td>
+        <td><a href="https://wealthboj.github.io/olawale/" target="_blank">View</a></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    function toggleDark() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
 </html>
-
-

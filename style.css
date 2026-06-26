@@ -474,3 +474,21 @@ transform:translateY(-5px);
 box-shadow:0 10px 30px rgba(255,122,0,.4);
 
 }
+footer{
+
+text-align:center;
+padding:30px;
+margin-top:50px;
+color:#aaa;
+font-size:15px;
+border-top:1px solid #222;
+
+}
+
+
+.light footer{
+
+color:#555;
+border-color:#ddd;
+
+}

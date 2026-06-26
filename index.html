@@ -1,212 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SABITU OLAWALE | CV</title>
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #222;
-      --card: #f4f4f4;
-      --accent: #4CAF50;
-      --border: #ddd;
-    }
+<title>Olawale | Software Developer</title>
 
-    body.dark {
-      --bg: #121212;
-      --text: #f1f1f1;
-      --card: #1e1e1e;
-      --border: #333;
-    }
+<link rel="stylesheet" href="style.css">
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1, h2 {
-      color: var(--accent);
-    }
-
-    img.profile {
-      width: 180px;
-      border-radius: 50%;
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .top {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .toggle {
-      margin-left: auto;
-      cursor: pointer;
-      padding: 8px 14px;
-      border-radius: 20px;
-      border: none;
-      background: var(--accent);
-      color: #fff;
-      font-weight: bold;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: var(--card);
-      margin-bottom: 20px;
-    }
-
-    th, td {
-      border: 1px solid var(--border);
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background: rgba(0,0,0,0.05);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .social a {
-      margin-right: 15px;
-    }
-
-    .email-button {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      padding: 10px 18px;
-      border-radius: 8px;
-      margin: 10px 0;
-    }
-
-    @media (max-width: 600px) {
-      .top {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
 </head>
 
+
 <body>
-  <div class="container">
 
-    <!-- HEADER -->
-    <div class="top">
-      <img src="profile.jpeg" alt="Profile Photo" class="profile">
-      <div>
-        <h1>SABITU OLAWALE</h1>
-        <p>Junior Software Developer (Trainee)</p>
-        <button class="toggle" onclick="toggleDark()">🌙 Dark Mode</button>
-      </div>
-    </div>
 
-    <!-- CONTACT -->
-    <h2><i class="fa-solid fa-address-card"></i> Contact Information</h2>
+<header>
 
-    <a class="email-button" href="mailto:olawalesabitu87@gmail.com">Email Me</a>
+<h2 class="logo">OLAWALE SABITU</h2>
 
-    <table>
-      <tr><th>Type</th><th>Details</th></tr>
-      <tr><td>Email</td><td>olawalesabitu87@gmail.com</td></tr>
-      <tr><td>Phone</td><td>+2347019933510</td></tr>
-      <tr><td>Address</td><td>Meiran, Lagos, Nigeria</td></tr>
-    </table>
 
-    <div class="social">
-      <a href="https://twitter.com/olawale_sabitu" target="_blank"><i class="fa-brands fa-x-twitter"></i> X</a>
-      <a href="https://linkedin.com/in/olawale-oluwapelumi-303a34244" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-      <a href="https://instagram.com/bolaj_vibez" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-    </div>
+<nav>
 
-    <!-- SUMMARY -->
-    <h2><i class="fa-solid fa-user"></i> Professional Summary</h2>
-    <p>
-      Motivated TS Academy student with growing skills in software development.
-      Passionate about building real-world solutions, continuous learning,
-      teamwork, and becoming a dependable tech professional.
-    </p>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
-    <!-- EXPERIENCE -->
-    <h2><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+</nav>
 
-    <table>
-      <tr>
-        <th>Role</th>
-        <th>Organization</th>
-        <th>Duration</th>
-        <th>Responsibilities</th>
-      </tr>
-      <tr>
-        <td>Junior Developer (Trainee)</td>
-        <td>TS Academy</td>
-        <td>Nov 28 – Present</td>
-        <td>Code reviews, teamwork, hands-on development</td>
-      </tr>
-    </table>
 
-    <!-- EDUCATION -->
-    <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+<button id="mode">🌙</button>
 
-    <table>
-      <tr><th>Qualification</th><th>Status</th></tr>
-      <tr><td>SSCE</td><td>Completed</td></tr>
-    </table>
+</header>
 
-    <!-- SKILLS -->
-    <h2><i class="fa-solid fa-code"></i> Skills</h2>
 
-    <table>
-      <tr><th>Category</th><th>Skills</th></tr>
-      <tr><td>Web</td><td>HTML, CSS, React, Node.js</td></tr>
-      <tr><td>Database</td><td>MySQL</td></tr>
-      <tr><td>Tools</td><td>Git, GitHub</td></tr>
-      <tr><td>Soft Skills</td><td>Problem-solving, analytical thinking</td></tr>
-    </table>
 
-    <!-- PROJECTS -->
-    <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
 
-    <table>
-      <tr><th>Name</th><th>Description</th><th>Link</th></tr>
-      <tr>
-        <td>Wealthboj Portfolio</td>
-        <td>Personal portfolio showcasing my skills and work</td>
-        <td><a href="https://wealthboj.github.io/olawale/" target="_blank">View</a></td>
-      </tr>
-    </table>
 
-  </div>
+<section class="hero">
 
-  <!-- DARK MODE SCRIPT -->
-  <script>
-    function toggleDark() {
-      document.body.classList.toggle("dark");
-    }
-  </script>
+
+<div class="intro">
+
+
+<p>Hello, I'm</p>
+
+<h1>Olawale</h1>
+
+<h2 id="typing"></h2>
+
+
+<p>
+
+A software developer creating modern,
+responsive and user-friendly applications.
+
+</p>
+
+
+
+
+<div>
+
+<a href="#projects">
+
+<button>
+View Projects
+</button>
+
+</a>
+
+
+<a href="https://github.com/wealthboj/olawale">
+
+<button class="secondary">
+GITHUB
+</button>
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="image-box">
+
+<img src="c:\olawaleoracle.png">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about-content">
+
+<p>
+
+I’m Olawale, a passionate software developer focused on creating modern,
+efficient, and user-friendly digital solutions. I enjoy turning ideas into
+functional applications by combining clean code, creative thinking, and
+problem-solving skills.
+
+</p>
+
+
+<p>
+
+My journey in software development started with curiosity about how
+technology works and how applications are built. Since then, I have been
+learning and improving my skills in web development, programming concepts,
+and software engineering practices.
+
+</p>
+
+
+<p>
+
+I specialize in building responsive websites and applications that provide
+great user experiences. I’m constantly learning new technologies, improving
+my coding skills, and working on projects that challenge me to grow as a
+developer.
+
+</p>
+
+
+<p>
+
+My goal is to become a well-rounded software engineer who creates reliable
+software that helps people and businesses solve real-world problems.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section id="skills">
+
+
+<h2>Skills</h2>
+
+
+<div class="grid">
+
+
+<div>HTML</div>
+<div>CSS</div>
+<div>JavaScript</div>
+<div>React</div>
+<div>Git</div>
+<div>GitHub</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="projects">
+
+
+<h2>Projects</h2>
+
+
+<div class="project">
+
+
+<h3>CAPSTONE PROJECT</h3>
+
+
+<p>
+A technology project developed by me and my team.
+</p>
+
+
+<a href="https://techy-nerds.vercel.app/">
+
+View Code
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<p>
+Have a project idea or want to work together?
+</p>
+
+
+<a class="contact-btn" href="mailto:Olawalesabitu87@gmail.com">
+
+Send Me An Email
+
+</a>
+
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+
 </body>
 </html>

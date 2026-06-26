@@ -514,11 +514,13 @@ transition:.3s;
 }
 
 
-.contact-btn:hover{
+.contact-links a:hover{
 
-transform:translateY(-5px);
+transform:translateY(-8px) scale(1.05);
 
-box-shadow:0 10px 30px rgba(255,122,0,.4);
+background:#ff9500;
+
+box-shadow:0 15px 35px rgba(255,122,0,.6);
 
 }
 footer{

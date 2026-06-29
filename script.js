@@ -1,87 +1,23 @@
-// typing effect
-
-const text=[
-"Software Developer",
-"Web Developer",
-"Problem Solver"
-];
+const gallery = document.getElementById("gallery");
 
 
-let i=0;
-let j=0;
-let remove=false;
+fetch("http://localhost:5000/images")
+.then(response => response.json())
+.then(images => {
 
 
-function type(){
+images.forEach(image => {
 
 
-let word=text[i];
+gallery.innerHTML += `
+
+<img 
+src="http://localhost:5000/uploads/${image}"
+alt="Jospat Project">
+
+`;
+
+});
 
 
-if(!remove){
-
-document.getElementById("typing").textContent =
-word.substring(0,j++);
-
-
-if(j>word.length){
-
-remove=true;
-
-setTimeout(type,1000);
-return;
-
-}
-
-
-}else{
-
-
-document.getElementById("typing").textContent =
-word.substring(0,j--);
-
-
-if(j<0){
-
-remove=false;
-
-i++;
-
-if(i>=text.length){
-
-i=0;
-
-}
-
-}
-
-}
-
-
-setTimeout(type,100);
-
-}
-
-
-type();
-
-
-
-
-
-// theme switch
-
-const btn=document.getElementById("mode");
-
-
-btn.onclick=()=>{
-
-document.body.classList.toggle("light");
-
-
-btn.textContent =
-document.body.classList.contains("light")
-? "🌙"
-: "☀️";
-
-}
+});
